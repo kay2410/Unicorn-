@@ -1,0 +1,68 @@
+body, html{
+	font-weight: bold;
+	font-family: 'Quintessential', cursive;
+	width: 100%;
+	height: 100%;
+	background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+h1{
+	font-size: 3rem;
+	text-align: center;
+}
+
+hr {
+    margin: 20px auto;
+    color: #FFB7200;
+    border: 3px solid #FB7200;
+    max-width: 500px;
+    opacity: 0.2;  
+} 
+
+
+.mssg{
+	max-width: 400px;
+	color: #FFBC88;
+	opacity: 0.05;
+	transition-duration: 2s;
+}
+
+.mssg:hover{
+	opacity: 1;
+
+}
+
+
+.uni{
+	float: right;
+	object-fit: cover;
+}
+
+
+.buffer{
+	padding: 8rem;
+}
+
+.bttn{
+	border-radius: 300px;
+	padding: 1rem 2rem;
+	color: #FFFFFF;
+	background-color: #FB7200;
+	border-color: #FB7200;
+	opacity: 0.7;
+	font-weight: 700;
+
+}	
+
+.bttn:hover{
+	background-color: #FB7200;
+	border-color: #FB7200;
+	border-width: 4px;
+}
+
+/*Styling for Memories webpage*/

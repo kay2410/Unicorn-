@@ -1,0 +1,231 @@
+html{
+	font-size: 62.5%;
+	
+}
+
+body, html{
+	font-size: 1rem; 	
+	background-image: linear-gradient(45deg, white, #C382AE);
+	font-weight: bold;
+	font-family: 'Yellowtail', cursive;
+	background-attachment: fixed;
+}
+
+#logo {
+	height: 50px;
+	width: auto;
+
+}
+
+.bttn{
+	border-radius: 300px;
+	padding: 0.5rem 0.5rem;
+	background-image: linear-gradient(#A87482, #EC6B8E, #FD4C7B);
+	background-color: #EC6B8E;
+	border-color: #EC6B8E;
+	opacity: 0.7;
+	font-weight: 250;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.5rem;
+}
+
+.bttn:hover{
+	background-color: #EC6B8E;
+	border-color: #EC6B8E;
+	border-width: 2px;
+}
+/*end of nav/ beginning of wrap*/
+
+.her{
+	width: 100%;
+	max-width: 650px;
+	height: 30%;
+	max-height: 450px;
+}
+
+/*nonauto slideshow*/
+
+.displaybox h3{
+	color: #CC8DAB;
+	font-size: 2rem;
+}
+
+.displaybox{
+	background-color: #FFFFFF ;
+}
+
+.picgallery{
+	display: grid;
+	grid-column-gap: 1rem;
+	padding: 0 2.5rem;
+	grid-template-columns: repeat(13, 1fr);
+	grid-template-rows: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .picgallery {
+        padding: 0 .5rem;
+        grid-column-gap: .8rem;
+    }
+}
+
+
+.imggal{
+	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+  	/*display: block;*/
+  	transition: all .5s;
+  	backface-visibility: hidden;
+  	filter: grayscale(.7);
+}
+
+.imggal:hover {
+    transform: scale(1.05);
+    filter: none;
+}
+
+/*Styling grid images*/
+.gal1{
+	grid-column: 1/ span 2;
+	grid-row: 1/ span 1;
+}
+
+.gal7{
+	grid-column: 5/ span 5;
+	grid-row: 3 / span 1;
+}
+
+.gal2{
+	grid-column: 3/ span 3;
+	grid-row: 1/ span 1;
+}
+
+.gal13{
+	grid-column: 1/ span 2;
+	grid-row: 2 / span 1;
+}
+
+.gal8{
+	grid-column: 3/ span 2 ;
+	grid-row: 2/ span 1;
+}
+
+.gal5{
+	grid-column: 1/ span 4;
+	grid-row: 3/ span 1;
+}
+
+.gal4{
+	grid-column: 10/ span 4;
+	grid-row: 3/ span 1;
+}
+
+.gal14{
+	grid-column: 5/ span 5;
+	grid-row: 2 / span 1;
+}
+
+.gal3{
+	grid-column: 10/span 2;
+	grid-row: 2/ span 1;
+}
+
+.gal6{
+	grid-column: 12/ span 2 ;
+	grid-row: 2/ span 1;
+}
+
+.gal10{
+	grid-column: 6/ span 2;
+	grid-row: 1/ span 1;
+}
+
+.gal11{
+	grid-column: 8/ span 2;
+	grid-row: 1/ span 1;
+}
+
+.gal12{
+	grid-column: 10/ span 2;
+	grid-row: 1/ span 1;
+}
+
+.gal9{
+	grid-column: 12/ span 2;
+	grid-row: 1/ span 1;
+}
+
+.point{
+	cursor: grab;
+}
+
+/*styling the lightbox/modal*/
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #B686A1;
+}
+
+.modal-content {  
+  background-color: #fefefe;  
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  }
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  object-fit: cover;
+  height: auto;
+}
